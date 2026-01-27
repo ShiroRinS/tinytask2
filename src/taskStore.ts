@@ -23,7 +23,7 @@ export const getTasks = (): Task[] => tasks;
  */
 export const addTask = (title: string): Task | null => {
   // BUG is here: does not use .trim()
-  if (!title) {
+  if (!title || title.trim() === '') {
     return null; // Reject empty titles
   }
   const newTask: Task = {
