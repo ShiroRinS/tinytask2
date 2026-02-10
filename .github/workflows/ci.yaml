@@ -94,4 +94,3 @@ jobs:
           -H "x-api-key: ${{ secrets.DOKPLOY_API_KEY }}" \
           -H "Content-Type: application/json" \
           -d '{"applicationId": "${{ secrets.DOKPLOY_APP_ID }}"}'
-#
